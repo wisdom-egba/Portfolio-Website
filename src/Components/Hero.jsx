@@ -10,7 +10,7 @@ const Hero = () => {
     words: [
       `Hello there!, I'm Wisdom`,
       `A Tech Enthusiast`,
-      `I'm a Frontend </Developer>`,
+      `I'm a Frontend <Developer />`,
     ],
     loop: true,
     delaySpeed: 2000,
