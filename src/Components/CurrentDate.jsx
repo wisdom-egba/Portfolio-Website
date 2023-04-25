@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import moment from "moment/moment"
+import { motion } from "framer-motion"
 const CurrentDate = () => {
   // let time = moment().format("h:mm:ss a")
   // let date = moment().format("LL")
@@ -45,12 +46,24 @@ const CurrentDate = () => {
   })
 
   return (
-    <div>
+    <motion.div
+      initial={{
+        y: -100,
+        opacity: 0.2,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1.5,
+      }}
+    >
       {/* <CompHeader date={date} /> */}
-      <p className="flex justify-end items-end pFont">{time}</p>
-      <p className="pFont">{date}</p>
-      <p className="pFont">{wish}</p>
-    </div>
+      <p className="flex justify-end items-end pFont md:text-xl">{time}</p>
+      <p className="flex justify-end items-end pFont md:text-xl ">{date}</p>
+      <p className="flex justify-end items-end pFont md:text-xl">{wish}</p>
+    </motion.div>
   )
 }
 
