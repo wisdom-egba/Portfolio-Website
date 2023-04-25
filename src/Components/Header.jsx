@@ -19,6 +19,7 @@ const Header = () => {
         }}
         transition={{
           duration: 0.5,
+          delay: 0.7,
         }}
         className="flex gap-4"
       >
@@ -38,11 +39,12 @@ const Header = () => {
         transition={{
           type: "spring",
           stiffness: 200,
+          delay: 0.9,
         }}
         className="flex items-center justify-center cursor-pointer gap-3"
       >
         <BiMessage size={25} style={{ color: "gray" }} />
-        <h1 className="hidden md:inline-flex text-sm text-gray-400">
+        <h1 className="hidden md:inline-flex text-sm text-gray-400 animate-bounce">
           GET IN TOUCH
         </h1>
       </motion.div>
