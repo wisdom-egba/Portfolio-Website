@@ -6,51 +6,54 @@ import About from "./pages/About/About"
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
 import CompHeader from "./Components/CompHeader"
+import Footer from "./Components/Footer"
 
 function App() {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll">
-      <Router>
-        <Routes>
-          <Route
-            path="/about"
-            element={
-              <div>
-                <CompHeader />
-                <About />
-              </div>
-            }
-          />
-          <Route
-            path="/project"
-            element={
-              <div>
-                <CompHeader />
-                <Projects />
-              </div>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <div>
-                <CompHeader />
-                <Contact />
-              </div>
-            }
-          />
-          <Route
-            path="/"
-            element={
-              <div>
-                <Header />
-                <Hero />
-              </div>
-            }
-          />
-        </Routes>
-      </Router>
-    </div>
+    <>
+      <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll">
+        <Router>
+          <Routes>
+            <Route
+              path="/about"
+              element={
+                <div>
+                  <CompHeader />
+                  <About />
+                </div>
+              }
+            />
+            <Route
+              path="/project"
+              element={
+                <div>
+                  <CompHeader />
+                  <Projects />
+                </div>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <div>
+                  <CompHeader />
+                  <Contact />
+                </div>
+              }
+            />
+            <Route
+              path="/"
+              element={
+                <div>
+                  <Header />
+                  <Hero />
+                </div>
+              }
+            />
+          </Routes>
+        </Router>
+      </div>
+    </>
   )
 
   {

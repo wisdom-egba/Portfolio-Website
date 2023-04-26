@@ -36,7 +36,7 @@ const CurrentDate = () => {
     (hour < 12 && "Morning") ||
     (hour < 17 && "Afternoon") ||
     (hour <= 3 && "Go to Bed") ||
-    "Good Evening"
+    "Evening"
   } `
 
   const time = today.toLocaleTimeString(locale, {
