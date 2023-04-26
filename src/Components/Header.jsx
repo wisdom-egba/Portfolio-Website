@@ -1,6 +1,12 @@
 import React from "react"
 import { FiFacebook } from "react-icons/fi"
-import { BsShare, BsGithub, BsTwitter, BsDiscord } from "react-icons/bs"
+import {
+  BsShare,
+  BsGithub,
+  BsTwitter,
+  BsDiscord,
+  BsLinkedin,
+} from "react-icons/bs"
 import { BiMessage } from "react-icons/bi"
 import { motion } from "framer-motion"
 const Header = () => {
@@ -28,6 +34,7 @@ const Header = () => {
         <BsGithub size={20} style={{ color: "gray" }} />
         <BsTwitter size={20} style={{ color: "gray" }} />
         <BsDiscord size={20} style={{ color: "gray" }} />
+        <BsLinkedin size={20} style={{ color: "gray" }} />
       </motion.div>
       <motion.div
         initial={{
