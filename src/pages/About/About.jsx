@@ -2,7 +2,6 @@ import React from "react"
 import wisdom from "../../assets/RBWC-26.jpg"
 import { motion } from "framer-motion"
 import { duration } from "moment/moment"
-import Footer from "../../Components/Footer"
 
 const About = () => {
   return (
@@ -93,7 +92,7 @@ const About = () => {
           HTML, CSS, Javacript, React, Tailwind CSS, Framer-Motion
         </p>
       </div>
-      <Footer />
+      <div></div>
     </div>
   )
 }

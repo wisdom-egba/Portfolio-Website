@@ -32,13 +32,13 @@ const Header = () => {
         className="flex gap-4"
       >
         <a href="https://github.com/wisdom-egba">
-          <BsGithub size={20} style={{ color: "gray" }} />
+          <BsGithub size={25} style={{ color: "gray" }} />
         </a>
         <a href="https://twitter.com/_wisdom34">
-          <BsTwitter size={20} style={{ color: "gray" }} />
+          <BsTwitter size={25} style={{ color: "gray" }} />
         </a>
         <a href="https://www.linkedin.com/in/egba-wisdom/">
-          <BsLinkedin size={20} style={{ color: "gray" }} />
+          <BsLinkedin size={25} style={{ color: "gray" }} />
         </a>
       </motion.div>
       <motion.div

@@ -32,11 +32,11 @@ const CurrentDate = () => {
   })}\n\n`
 
   const hour = today.getHours()
-  const wish = `Good ${
-    (hour < 12 && "Morning") ||
-    (hour < 17 && "Afternoon") ||
-    (hour <= 3 && "Go to Bed") ||
-    "Evening"
+  const wish = ` ${
+    (hour <= 4 && "Go to Sleep") ||
+    (hour < 12 && "Good Morning") ||
+    (hour < 17 && "Good Afternoon") ||
+    "Good Evening"
   } `
 
   const time = today.toLocaleTimeString(locale, {

@@ -6,7 +6,7 @@ import About from "./pages/About/About"
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
 import CompHeader from "./Components/CompHeader"
-import Footer from "./Components/Footer"
+
 import GetInTouch from "./pages/GetInTouch/GetInTouch"
 
 function App() {
