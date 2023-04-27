@@ -1,11 +1,33 @@
 import React from "react"
 import CurrentDate from "./CurrentDate"
 import wisdom from "../assets/RBWC-26.jpg"
-const head = `<Wisdom>About</Wisdom>`
-const CompHeader = ({ date }) => {
-  console.log(date)
+import { BsArrowLeft } from "react-icons/bs"
+import { easeOut, motion } from "framer-motion"
+import { Link } from "react-router-dom"
+
+const CompHeader = () => {
   return (
-    <div className="flex justify-end p-3">
+    <div className="flex justify-between items-start p-3 ml-5 md:ml-24 lg:ml-[30%]">
+      <motion.div
+        initial={{
+          opacity: 0.1,
+          scale: 0.5,
+        }}
+        animate={{
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 2,
+        }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <Link to="/">
+          <BsArrowLeft size={40} style={{ color: "#F7AB0A" }} />
+        </Link>
+      </motion.div>
+
       <CurrentDate />
     </div>
   )

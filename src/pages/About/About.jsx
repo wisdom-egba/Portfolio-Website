@@ -2,6 +2,13 @@ import React from "react"
 import wisdom from "../../assets/RBWC-26.jpg"
 import { motion } from "framer-motion"
 import { duration } from "moment/moment"
+import {
+  BsShare,
+  BsGithub,
+  BsTwitter,
+  BsDiscord,
+  BsLinkedin,
+} from "react-icons/bs"
 
 const About = () => {
   return (
@@ -59,15 +66,15 @@ const About = () => {
           }}
           className="py-3 md:py-5"
         >
-          <p className=" pFont2 text-lg leading-6 tracking-wider font-thin">
+          <p className=" pFont2 text-lg lg:text-[25px] lg:leading-8 leading-6 tracking-wider font-thin">
             Hello, my name is Wisdom, I'm a frontend developer passionate on
             collaborating with other developers to proffer solutions to
             real-life problems. I have a B.Eng degree in Mechanical Engineering.
           </p>
-          <p className="pFont2 text-lg leading-6 tracking-wider font-thin">
+          <p className="pFont2 text-lg pt-2 lg:pt-4 lg:text-[25px] lg:leading-8 leading-6 tracking-wider font-thin">
             I have about two years experience using various frontend
             technologies. Oh yh, I also love gaming and playing musical
-            instrument at my leisure
+            instrument at leisure
           </p>
         </motion.div>
 
@@ -83,7 +90,7 @@ const About = () => {
           transition={{
             duration: 1.5,
           }}
-          className="pFont2 text-lg"
+          className="pFont2 text-lg lg:text-[25px]"
         >
           Some of the Frontend technologies I have worked with during the period
           are:
@@ -92,7 +99,20 @@ const About = () => {
           HTML, CSS, Javacript, React, Tailwind CSS, Framer-Motion
         </p>
       </div>
-      <div></div>
+      <div className="flex flex-col pt-4  ">
+        <h1>Socials</h1>
+        <div className="flex gap-8 py-2">
+          <a href="https://github.com/wisdom-egba">
+            <BsGithub size={25} style={{ color: "gray" }} />
+          </a>
+          <a href="https://twitter.com/_wisdom34">
+            <BsTwitter size={25} style={{ color: "gray" }} />
+          </a>
+          <a href="https://www.linkedin.com/in/egba-wisdom/">
+            <BsLinkedin size={25} style={{ color: "gray" }} />
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

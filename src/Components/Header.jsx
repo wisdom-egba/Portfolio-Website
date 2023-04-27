@@ -53,9 +53,12 @@ const Header = () => {
           stiffness: 200,
           delay: 0.9,
         }}
-        className="flex items-center justify-center cursor-pointer gap-3"
+        className=""
       >
-        <Link to="/contact-me">
+        <Link
+          className="flex items-center justify-center cursor-pointer gap-3"
+          to="/contact-me"
+        >
           <BiMessage size={25} style={{ color: "gray" }} />
           <a
             href="#"

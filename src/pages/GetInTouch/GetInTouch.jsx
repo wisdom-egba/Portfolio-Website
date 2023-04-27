@@ -3,6 +3,7 @@ import { BsGithub, BsTwitter, BsDiscord, BsLinkedin } from "react-icons/bs"
 import { AiOutlineClose } from "react-icons/ai"
 import wisdom from "../../assets/RBWC-26.jpg"
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 const GetInTouch = () => {
   return (
     <div
@@ -54,7 +55,23 @@ const GetInTouch = () => {
               >
                 Send Email
               </a>
-              <div className="flex  flex-col justify-center items-center gap-3 mt-4 text-black">
+              <motion.div
+                initial={{
+                  opacity: 0.2,
+                  x: -20,
+                  scale: 0.4,
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 2,
+                  delay: 0.5,
+                }}
+                className="flex  flex-col justify-center items-center gap-3 mt-4 text-black"
+              >
                 <a
                   href="https://github.com/wisdom-egba"
                   className="flex gap-3 heroBtn"
@@ -76,7 +93,7 @@ const GetInTouch = () => {
                 >
                   <BsLinkedin size={20} style={{ color: "#3d7cc9" }} /> LinkedIn
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
