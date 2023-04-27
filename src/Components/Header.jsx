@@ -31,12 +31,15 @@ const Header = () => {
         }}
         className="flex gap-4"
       >
-        <FiFacebook size={20} style={{ color: "gray" }} />
-        <BsShare size={20} style={{ color: "gray" }} />
-        <BsGithub size={20} style={{ color: "gray" }} />
-        <BsTwitter size={20} style={{ color: "gray" }} />
-        <BsDiscord size={20} style={{ color: "gray" }} />
-        <BsLinkedin size={20} style={{ color: "gray" }} />
+        <a href="https://github.com/wisdom-egba">
+          <BsGithub size={20} style={{ color: "gray" }} />
+        </a>
+        <a href="https://twitter.com/_wisdom34">
+          <BsTwitter size={20} style={{ color: "gray" }} />
+        </a>
+        <a href="https://www.linkedin.com/in/egba-wisdom/">
+          <BsLinkedin size={20} style={{ color: "gray" }} />
+        </a>
       </motion.div>
       <motion.div
         initial={{
@@ -52,8 +55,8 @@ const Header = () => {
         }}
         className="flex items-center justify-center cursor-pointer gap-3"
       >
-        <BiMessage size={25} style={{ color: "gray" }} />
         <Link to="/contact-me">
+          <BiMessage size={25} style={{ color: "gray" }} />
           <a
             href="#"
             className="hidden md:inline-flex text-sm text-gray-400 animate-bounce"

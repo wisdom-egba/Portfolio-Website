@@ -49,7 +49,7 @@ const GetInTouch = () => {
             </div>
             <div className="bg-[rgb(36,36,36)] px-4 py-3 sm:flex sm:flex-col sm:px-6">
               <a
-                href="#"
+                href="mailto: egbawisdom34@gmail.com"
                 className="inline-flex w-full justify-center rounded-full border-[#F7AB0A] border px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#F7AB0A] sm:ml-3 sm:w-auto"
               >
                 Send Email
