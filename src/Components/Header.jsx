@@ -29,7 +29,7 @@ const Header = () => {
           duration: 0.5,
           delay: 0.7,
         }}
-        className="flex gap-4"
+        className="flex gap-6"
       >
         <a href="https://github.com/wisdom-egba">
           <BsGithub size={25} style={{ color: "gray" }} />

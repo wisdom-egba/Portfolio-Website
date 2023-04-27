@@ -1,4 +1,4 @@
-import { delay } from "framer-motion"
+import { motion, delay } from "framer-motion"
 import React from "react"
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 import CircleBackground from "./CircleBackground"
@@ -15,17 +15,46 @@ const Hero = () => {
     loop: true,
     delaySpeed: 2000,
     deleteSpeed: 10,
+    delay: 3,
   })
 
   return (
     <div className="h-screen flex flex-col justify-center items-center text-center overflow-hidden space-y-6">
       <CircleBackground />
-      <img className="rounded-full w-[90px] h-[90px]" src={wisdom} alt="" />
-      <h2 className="text-sm uppercase tracking-[15px] pb-2 text-gray-500">
+      <motion.img
+        initial={{
+          scale: 3,
+        }}
+        animate={{
+          rotate: 360,
+          scale: 1,
+        }}
+        transition={{
+          duration: 2,
+        }}
+        className="rounded-full w-[90px] h-[90px]"
+        src={wisdom}
+        alt=""
+      />
+      <motion.h2
+        initial={{
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 2,
+          delay: 0.5,
+        }}
+        className="text-sm md:text-lg uppercase tracking-[15px] pb-2 text-gray-500"
+      >
         Software Engineer
-      </h2>
+      </motion.h2>
       <div className="z-20">
-        <h1 className="md:text-4xl lg:text-5xl font-semibold scroll-px-10">
+        <h1 className="text-xl md:text-4xl lg:text-5xl font-semibold scroll-px-10">
           {text}
           <Cursor cursorColor="gray" />
         </h1>
