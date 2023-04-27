@@ -9,6 +9,8 @@ import {
 } from "react-icons/bs"
 import { BiMessage } from "react-icons/bi"
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
+
 const Header = () => {
   return (
     <div className="sticky flex items-start xl:items-center justify-between max-w-7xl m-auto p-5">
@@ -51,9 +53,14 @@ const Header = () => {
         className="flex items-center justify-center cursor-pointer gap-3"
       >
         <BiMessage size={25} style={{ color: "gray" }} />
-        <h1 className="hidden md:inline-flex text-sm text-gray-400 animate-bounce">
-          GET IN TOUCH
-        </h1>
+        <Link>
+          <a
+            href="#"
+            className="hidden md:inline-flex text-sm text-gray-400 animate-bounce"
+          >
+            GET IN TOUCH
+          </a>
+        </Link>
       </motion.div>
     </div>
   )
