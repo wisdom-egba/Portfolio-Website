@@ -10,7 +10,7 @@ import {
   BsLinkedin,
 } from "react-icons/bs"
 
-const About = () => {
+const About = ({ toggleMode }) => {
   return (
     <div className=" max-w-[355px] md:max-w-[80%] mx-auto lg:w-[40%]">
       <div>
@@ -48,7 +48,11 @@ const About = () => {
           transition={{
             duration: 2,
           }}
-          className="text-xl font-bold text-gray-400 py-2 tracking-wider"
+          className={
+            toggleMode
+              ? "text-xl font-bold text-black py-2 tracking-wider"
+              : "text-xl font-bold text-gray-400 py-2 tracking-wider"
+          }
         >
           About Me
         </motion.h1>
@@ -66,12 +70,24 @@ const About = () => {
           }}
           className="py-3 md:py-5"
         >
-          <p className=" pFont2 text-lg lg:text-[25px] lg:leading-8 leading-6 tracking-wider font-thin">
+          <p
+            className={
+              toggleMode
+                ? " pFont2 text-lg font-semibold lg:text-[25px] lg:leading-8 leading-6 tracking-wider"
+                : " pFont2 text-lg  lg:text-[25px] lg:leading-8 leading-6 tracking-wider font-thin"
+            }
+          >
             Hello, my name is Wisdom, I'm a frontend developer passionate on
             collaborating with other developers to proffer solutions to
             real-life problems. I have a B.Eng degree in Mechanical Engineering.
           </p>
-          <p className="pFont2 text-lg pt-2 lg:pt-4 lg:text-[25px] lg:leading-8 leading-6 tracking-wider font-thin">
+          <p
+            className={
+              toggleMode
+                ? "pFont2 text-lg pt-2 lg:pt-4 lg:text-[25px] lg:leading-8 leading-6 tracking-wider font-semibold"
+                : "pFont2 text-lg pt-2 lg:pt-4 lg:text-[25px] lg:leading-8 leading-6 tracking-wider font-thin"
+            }
+          >
             I have about two years experience using various frontend
             technologies. Oh yh, I also love gaming and playing musical
             instrument at leisure
@@ -90,7 +106,11 @@ const About = () => {
           transition={{
             duration: 1.5,
           }}
-          className="pFont2 text-lg lg:text-[25px]"
+          className={
+            toggleMode
+              ? "pFont2 text-lg lg:text-[25px] font-semibold"
+              : "pFont2 text-lg lg:text-[25px]"
+          }
         >
           Some of the Frontend technologies I have worked with during the period
           are:

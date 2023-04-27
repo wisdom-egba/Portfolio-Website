@@ -5,7 +5,7 @@ import { BsArrowLeft } from "react-icons/bs"
 import { easeOut, motion } from "framer-motion"
 import { Link } from "react-router-dom"
 
-const CompHeader = () => {
+const CompHeader = ({ toggleMode }) => {
   return (
     <div className="flex justify-between items-start p-3 ml-5 md:ml-24 lg:ml-[30%]">
       <motion.div
@@ -28,7 +28,7 @@ const CompHeader = () => {
         </Link>
       </motion.div>
 
-      <CurrentDate />
+      <CurrentDate toggleMode={toggleMode} />
     </div>
   )
 }

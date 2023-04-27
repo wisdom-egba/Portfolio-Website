@@ -5,7 +5,7 @@ import CircleBackground from "./CircleBackground"
 import wisdom from "../assets/RBWC-26.jpg"
 import { Link } from "react-router-dom"
 
-const Hero = () => {
+const Hero = ({ toggleMode }) => {
   const [text] = useTypewriter({
     words: [
       `Hello there!, I'm Wisdom`,
@@ -60,13 +60,19 @@ const Hero = () => {
         </h1>
         <div className="pt-5 mx-1">
           <Link to="/about">
-            <button className="heroBtn">About</button>
+            <button className={toggleMode ? "heroBtn2" : "heroBtn"}>
+              About
+            </button>
           </Link>
           <Link to="/project">
-            <button className="heroBtn">projects</button>
+            <button className={toggleMode ? "heroBtn2" : "heroBtn"}>
+              projects
+            </button>
           </Link>
           <Link to="/contact">
-            <button className="heroBtn">Contact</button>
+            <button className={toggleMode ? "heroBtn2" : "heroBtn"}>
+              Contact
+            </button>
           </Link>
         </div>
       </div>

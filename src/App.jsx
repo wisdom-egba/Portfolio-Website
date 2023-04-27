@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "./Components/Header"
 import Hero from "./Components/Hero"
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
@@ -10,17 +10,26 @@ import CompHeader from "./Components/CompHeader"
 import GetInTouch from "./pages/GetInTouch/GetInTouch"
 
 function App() {
+  const [toggleMode, setToggleMode] = useState(false)
+
   return (
     <>
-      <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll">
+      <div
+        className={
+          toggleMode
+            ? "bg-[#F7EFE5] text-black h-screen snap-y snap-mandatory overflow-scroll"
+            : "bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll"
+        }
+      >
+        <div className="absolute right-16 top-5 md:right-[200px]"></div>
         <Router>
           <Routes>
             <Route
               path="/about"
               element={
                 <div>
-                  <CompHeader />
-                  <About />
+                  <CompHeader toggleMode={toggleMode} />
+                  <About toggleMode={toggleMode} />
                 </div>
               }
             />
@@ -28,8 +37,8 @@ function App() {
               path="/project"
               element={
                 <div>
-                  <CompHeader />
-                  <Projects />
+                  <CompHeader toggleMode={toggleMode} />
+                  <Projects toggleMode={toggleMode} />
                 </div>
               }
             />
@@ -45,8 +54,11 @@ function App() {
               path="/"
               element={
                 <div>
-                  <Header />
-                  <Hero />
+                  <Header
+                    toggleMode={toggleMode}
+                    setToggleMode={setToggleMode}
+                  />
+                  <Hero toggleMode={toggleMode} />
                 </div>
               }
             />

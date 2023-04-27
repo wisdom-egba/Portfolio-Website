@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import moment from "moment/moment"
 import { motion } from "framer-motion"
-const CurrentDate = () => {
+const CurrentDate = ({ toggleMode }) => {
   // let time = moment().format("h:mm:ss a")
   // let date = moment().format("LL")
 
@@ -60,9 +60,33 @@ const CurrentDate = () => {
       }}
     >
       {/* <CompHeader date={date} /> */}
-      <p className="flex justify-end items-end pFont md:text-xl">{time}</p>
-      <p className="flex justify-end items-end pFont md:text-xl ">{date}</p>
-      <p className="flex justify-end items-end pFont md:text-xl">{wish}</p>
+      <p
+        className={
+          toggleMode
+            ? " font-semibold flex justify-end items-end pFont md:text-xl"
+            : "flex justify-end items-end pFont md:text-xl"
+        }
+      >
+        {time}
+      </p>
+      <p
+        className={
+          toggleMode
+            ? " font-semibold flex justify-end items-end pFont md:text-xl"
+            : "flex justify-end items-end pFont md:text-xl"
+        }
+      >
+        {date}
+      </p>
+      <p
+        className={
+          toggleMode
+            ? " font-semibold flex justify-end items-end pFont md:text-xl"
+            : "flex justify-end items-end pFont md:text-xl"
+        }
+      >
+        {wish}
+      </p>
     </motion.div>
   )
 }
