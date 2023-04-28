@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai"
 import wisdom from "../../assets/RBWC-26.jpg"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-const GetInTouch = () => {
+const GetInTouch = ({ toggleMode }) => {
   return (
     <div
       className="relative z-10 w-full shadow-g"
@@ -17,7 +17,13 @@ const GetInTouch = () => {
       <div className="fixed inset-0 z-10 overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0">
           <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-            <div className="bg-[rgb(36,36,36)] px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+            <div
+              className={
+                toggleMode
+                  ? " bg-[#F7EFE5] px-4 pb-4 pt-5 sm:p-6 sm:pb-4"
+                  : "bg-[rgb(36,36,36)] px-4 pb-4 pt-5 sm:p-6 sm:pb-4"
+              }
+            >
               <div className="sm:flex sm:items-start">
                 <div class="mx-auto flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-red-400 sm:mx-0 sm:h-10 sm:w-10">
                   <img
@@ -27,9 +33,15 @@ const GetInTouch = () => {
                   />
                 </div>
 
-                <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left ">
+                <div
+                  className={
+                    toggleMode
+                      ? "mt-3 text-center text-black font-semibold sm:ml-4 sm:mt-0 sm:text-left "
+                      : "mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left "
+                  }
+                >
                   <h3
-                    className="text-base font-semibold leading-6 md:text-lg text-white animate-bounce"
+                    className="text-base font-semibold leading-6 md:text-lg  animate-bounce"
                     id="modal-title "
                   >
                     Reach Out!!
@@ -38,7 +50,7 @@ const GetInTouch = () => {
                     <AiOutlineClose size={35} style={{ color: "#F7AB0A" }} />
                   </Link>
                   <div className="mt-2">
-                    <p className=" text-white pFont text-xl leading-6 tracking-wider font-thin">
+                    <p className=" pFont text-xl leading-6 tracking-wider">
                       Are you interested in Frontend developer to build amazing
                       projects with sleek UI? then hit the button below. You can
                       also get in touch with me for freelancing, part-time and
@@ -48,10 +60,20 @@ const GetInTouch = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-[rgb(36,36,36)] px-4 py-3 sm:flex sm:flex-col sm:px-6">
+            <div
+              className={
+                toggleMode
+                  ? "bg-[#F7EFE5]  px-4 py-3 sm:flex sm:flex-col sm:px-6"
+                  : "bg-[rgb(36,36,36)] px-4 py-3 sm:flex sm:flex-col sm:px-6"
+              }
+            >
               <a
                 href="mailto: egbawisdom34@gmail.com"
-                className="inline-flex w-full justify-center rounded-full border-[#F7AB0A] border px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#F7AB0A] sm:ml-3 sm:w-auto"
+                className={
+                  toggleMode
+                    ? "inline-flex w-full justify-center rounded-full border-[#F7AB0A] border px-3 py-3 text-sm font-semibold text-black shadow-sm hover:bg-[#F7AB0A] hover:text-white sm:ml-3 sm:w-auto"
+                    : "inline-flex w-full justify-center rounded-full border-[#F7AB0A] border px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#F7AB0A] sm:ml-3 sm:w-auto"
+                }
               >
                 Send Email
               </a>
@@ -74,13 +96,17 @@ const GetInTouch = () => {
               >
                 <a
                   href="https://github.com/wisdom-egba"
-                  className="flex gap-3 heroBtn"
+                  className={
+                    toggleMode ? "flex gap-3 heroBtn2" : "flex gap-3 heroBtn"
+                  }
                 >
                   <BsGithub size={20} style={{ color: "black" }} /> Github
                 </a>
                 <a
                   href="https://twitter.com/_wisdom34"
-                  className="flex gap-3 heroBtn"
+                  className={
+                    toggleMode ? "flex gap-3 heroBtn2" : "flex gap-3 heroBtn"
+                  }
                 >
                   <BsTwitter size={20} style={{ color: "#3d7cc9" }} /> Twitter
                 </a>
@@ -89,7 +115,9 @@ const GetInTouch = () => {
                 </a> */}
                 <a
                   href="https://www.linkedin.com/in/egba-wisdom/"
-                  className="flex gap-3 heroBtn"
+                  className={
+                    toggleMode ? "flex gap-3 heroBtn2" : "flex gap-3 heroBtn"
+                  }
                 >
                   <BsLinkedin size={20} style={{ color: "#3d7cc9" }} /> LinkedIn
                 </a>

@@ -62,7 +62,10 @@ function App() {
                 </div>
               }
             />
-            <Route path="/contact-me" element={<GetInTouch />} />
+            <Route
+              path="/contact-me"
+              element={<GetInTouch toggleMode={toggleMode} />}
+            />
           </Routes>
         </Router>
       </div>
