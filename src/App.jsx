@@ -46,7 +46,7 @@ function App() {
               path="/contact"
               element={
                 <div>
-                  <Contact />
+                  <Contact toggleMode={toggleMode} />
                 </div>
               }
             />

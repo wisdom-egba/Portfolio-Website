@@ -112,8 +112,8 @@ const About = ({ toggleMode }) => {
               : "pFont2 text-lg lg:text-[25px]"
           }
         >
-          Some of the Frontend technologies I have worked with during the period
-          are:
+          Some of the Frontend technologies I have worked with during this
+          period are:
         </motion.h3>
         <p className="pFont text-[18px] md:text-lg lg:text-2xl py-2 tracking-[3px] font-semibold ">
           HTML, CSS, Javacript, React, Tailwind CSS, Framer-Motion

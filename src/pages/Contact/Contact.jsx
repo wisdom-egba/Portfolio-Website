@@ -1,10 +1,10 @@
 import React from "react"
 import GetInTouch from "../GetInTouch/GetInTouch"
 
-const Contact = () => {
+const Contact = ({ toggleMode }) => {
   return (
     <div>
-      <GetInTouch />
+      <GetInTouch toggleMode={toggleMode} />
     </div>
   )
 }
