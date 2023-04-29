@@ -23,7 +23,7 @@ const CompHeader = ({ toggleMode }) => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        <Link to="/">
+        <Link to="/" className="animate-pulse">
           <BsArrowLeft size={40} style={{ color: "#F7AB0A" }} />
         </Link>
       </motion.div>

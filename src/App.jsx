@@ -17,7 +17,7 @@ function App() {
       <div
         className={
           toggleMode
-            ? "bg-[#F7EFE5] text-black h-screen snap-y snap-mandatory overflow-scroll"
+            ? "bg-[#F7EFE5] text-black h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll "
             : "bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll"
         }
       >
