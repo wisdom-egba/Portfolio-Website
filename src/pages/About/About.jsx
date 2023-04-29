@@ -89,7 +89,7 @@ const About = ({ toggleMode }) => {
             }
           >
             I have about two years experience using various frontend
-            technologies. Oh yh, I also love gaming and playing musical
+            technologies. Oh yeah, I also love gaming and playing musical
             instrument at leisure
           </p>
         </motion.div>
