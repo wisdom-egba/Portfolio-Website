@@ -124,16 +124,20 @@ const About = ({ toggleMode }) => {
         <div className="md:flex gap-8 py-2">
           <a
             href="https://github.com/wisdom-egba"
-            className="flex gap-2 my-1 md:my-3"
+            className="flex gap-2 my-1 md:my-3 hover:text-[#F7AB0A]"
           >
             <BsGithub size={25} style={{ color: "gray" }} /> @wisdom-egba
           </a>
-          <a href="https://twitter.com/_wisdom34" className="flex gap-2 my-3">
-            <BsTwitter size={25} style={{ color: "gray" }} /> @_wisdom34
+          <a
+            href="https://twitter.com/_wisdom34"
+            className="flex gap-2 my-3 hover:text-[#F7AB0A]"
+          >
+            <BsTwitter size={25} style={{ color: "gray" }} />
+            @_wisdom34
           </a>
           <a
             href="https://www.linkedin.com/in/egba-wisdom/"
-            className="flex gap-2 my-3"
+            className="flex gap-2 my-3 hover:text-[#F7AB0A]"
           >
             <BsLinkedin size={25} style={{ color: "gray" }} /> @egba-wisdom
           </a>
