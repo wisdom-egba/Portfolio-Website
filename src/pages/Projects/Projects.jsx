@@ -1,13 +1,20 @@
 import React from "react"
-
-const Projects = ({ toggleMode, setToggleMode }) => {
-  console.log(toggleMode)
+import logo1 from "../../assets/umba-shot.jpg"
+const Projects = () => {
+  const projects = [1, 2, 3, 4]
   return (
-    <div
-      onClick={() => setToggleMode(!toggleMode)}
-      className="flex items-center justify-center"
-    >
-      <h3 className="absolute top-[20%] tracking-[15px] uppercase">Projects</h3>
+    <div className="relative overflow-hidden flex-col max-w-full flex items-center justify-center h-screen mx-auto">
+      <h3 className="relative  tracking-[15px] uppercase">Projects</h3>
+
+      <div className="relative w-full flex overflow-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+        {projects.map((project) => {
+          return (
+            <div className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center  h-screen">
+              <img className="" src={logo1} alt="" />
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
