@@ -10,7 +10,10 @@ const Projects = () => {
         {projects.map((project) => {
           return (
             <div className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center">
-              <img className=" w-[40%]" src={logo1} alt="" />
+              <img className=" md:w-[100%] lg:w-[30%]" src={logo1} alt="" />
+              <div className="font-semibold py-8">
+                <h1 className="text-red">Umba Clone</h1>
+              </div>
             </div>
           )
         })}
