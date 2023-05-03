@@ -14,11 +14,13 @@ const CompHeader = ({ toggleMode }) => {
           scale: 0.5,
         }}
         animate={{
+          x: [0, 50, 50, 0],
           opacity: 1,
           scale: 1,
         }}
         transition={{
-          duration: 2,
+          bounce: Infinity,
+          duration: 5,
         }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
