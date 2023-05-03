@@ -6,11 +6,11 @@ const Projects = () => {
     <div className="relative overflow-hidden flex-col max-w-full flex items-center justify-center space-y-9 mx-auto">
       <h3 className="relative  tracking-[15px] uppercase">Projects</h3>
 
-      <div className="relative w-full flex overflow-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className={"relative w-full flex overflow-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-[rgb(36,36,36)] scrollbar-thin scrollbar-thumb-orange-400 outline-none"}>
         {projects.map((project) => {
           return (
             <div className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center">
-              <img className=" md:w-[100%] lg:w-[30%]" src={logo1} alt="" />
+              <img className=" md:w-[40%] lg:w-[30%]" src={logo1} alt="" />
               <div className="font-semibold py-8">
                 <h1 className="text-red">Umba Clone</h1>
               </div>
