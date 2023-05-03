@@ -15,6 +15,7 @@ const CircleBackground = () => {
       transition={{
         duration: 2,
       }}
+      viewport={{}}
       className="relative flex justify-center items-center"
     >
       <div className=" absolute border border-[#333333] rounded-full h-[200px] md:h-[400px] w-[200px] md:w-[400px] mt-52 animate-ping " />

@@ -4,11 +4,11 @@
 
 @layer components {
   .heroBtn {
-    @apply py-2 border-[#242424] uppercase px-4 rounded-full text-sm tracking-widest text-gray-500 transition-all border hover:border-[#F7AB0A] hover:text-[#F7AB0A] cursor-pointer;
+    @apply py-2 border-[#242424] uppercase px-4 rounded-full text-sm tracking-widest text-gray-500 transition-all border hover:border-[#F7AB0A] hover:text-[#F7AB0A] cursor-pointer outline-none;
   }
 
   .heroBtn2 {
-    @apply py-2 border-transparent uppercase px-4 rounded-full text-sm tracking-widest text-black transition-all border hover:border-[#F7AB0A] hover:text-[#F7AB0A] cursor-pointer;
+    @apply py-2 border-transparent uppercase px-4 rounded-full text-sm tracking-widest text-black transition-all border hover:border-[#F7AB0A] hover:text-[#F7AB0A] cursor-pointer outline-none;
   }
 }
 
