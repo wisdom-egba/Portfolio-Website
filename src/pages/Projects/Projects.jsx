@@ -3,7 +3,7 @@ import { projectData } from "./projectData"
 const Projects = ({ toggleMode }) => {
   return (
     <div className="relative overflow-hidden flex-col max-w-full flex items-center justify-center space-y-9 mx-auto">
-      <h3 className="relative  tracking-[15px] uppercase">Projects</h3>
+      <h3 className="relative  tracking-[15px] uppercase py-4">Projects</h3>
 
       <div
         className={
