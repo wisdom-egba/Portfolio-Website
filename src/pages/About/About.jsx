@@ -30,6 +30,7 @@ const About = ({ toggleMode }) => {
             opacity: 0.1,
             delay: 0.5,
           }}
+          viewport={{ once: true }}
           className="rounded-full w-[90px] h-[90px]"
           src={wisdom}
           alt=""
@@ -48,6 +49,7 @@ const About = ({ toggleMode }) => {
           transition={{
             duration: 2,
           }}
+          viewport={{ once: true }}
           className={
             toggleMode
               ? "text-xl font-bold text-black py-2 tracking-wider"
@@ -68,6 +70,7 @@ const About = ({ toggleMode }) => {
           transition={{
             duration: 1.5,
           }}
+          viewport={{ once: true }}
           className="py-3 md:py-5"
         >
           <p

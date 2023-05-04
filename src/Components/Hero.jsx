@@ -32,6 +32,7 @@ const Hero = ({ toggleMode }) => {
         transition={{
           duration: 2,
         }}
+        viewport={{ once: true }}
         className="rounded-full w-[90px] h-[90px]"
         src={wisdom}
         alt=""
@@ -49,6 +50,7 @@ const Hero = ({ toggleMode }) => {
           duration: 2,
           delay: 0.5,
         }}
+        viewport={{ once: true }}
         className="text-sm md:text-lg uppercase tracking-[15px] pb-2 text-gray-500"
       >
         Software Engineer
