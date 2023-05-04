@@ -46,7 +46,10 @@ const GetInTouch = ({ toggleMode }) => {
                   >
                     Reach Out!!
                   </h3>
-                  <Link to="/" className="absolute top-0 right-0 p-4">
+                  <Link
+                    to="/"
+                    className="absolute top-0 right-0 p-4 animate-pulse"
+                  >
                     <AiOutlineClose size={35} style={{ color: "#F7AB0A" }} />
                   </Link>
                   <div className="mt-2">
