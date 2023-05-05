@@ -21,15 +21,15 @@ const Projects = ({ toggleMode }) => {
             >
               <div className="snap-center flex items-center justify-center filter ">
                 <img
-                  className=" md:w-[40%] lg:w-[30%] rounded-xl drop-shadow-lg shadow-xl hover:grayscale "
+                  className=" md:w-[40%] lg:w-[30%] rounded-xl drop-shadow-lg shadow-xl "
                   src={img}
                   alt=""
                 />
-                <div className="absolute text-black flex gap-3 w-full justify-center mt-40 z-30">
+                <div className="absolute text-black flex gap-3 w-full justify-center mt-40 z-30 hover:grayscale">
                   <button className="p-2 rounded-full border">
                     Source Code
                   </button>
-                  <button className="p-2 rounded-full border hover:text-[#F7AB0A]">
+                  <button className="p-2 rounded-full border ">
                     Demo-Link
                   </button>
                 </div>
