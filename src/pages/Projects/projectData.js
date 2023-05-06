@@ -1,15 +1,15 @@
-import umba from "../../assets/umba-shot (2).jpg"
+import umba from "../../assets/umba-shot.jpg"
 import landingpage from "../../assets/landing-page.jpg"
 export const projectData = [
   {
     id: 1,
-    title: "kndlvsdv",
-    description: `jdsnsdns`,
+    title: "Umba Clone",
+    description: ``,
     img: umba,
   },
   {
     id: 2,
-    title: "kndlvsdv",
+    title: "Landing Page",
     description: `jdsnsdns`,
     img: landingpage,
   },

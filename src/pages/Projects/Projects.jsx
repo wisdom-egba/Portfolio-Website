@@ -1,5 +1,6 @@
 import React from "react"
 import { projectData } from "./projectData"
+import { motion } from "framer-motion"
 const Projects = ({ toggleMode }) => {
   return (
     <div className="relative overflow-hidden flex-col max-w-full flex items-center justify-center space-y-9 mx-auto z-20">
@@ -19,7 +20,12 @@ const Projects = ({ toggleMode }) => {
               key={id}
               className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center z-10 "
             >
-              <div className="snap-center flex items-center justify-center filter ">
+              <motion.div
+                initial={{ scale: 0, opacity: 0.5 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 2 }}
+                className="snap-center flex items-center justify-center filter "
+              >
                 <img
                   className=" md:w-[40%] lg:w-[30%] rounded-xl drop-shadow-lg shadow-xl "
                   src={img}
@@ -33,7 +39,7 @@ const Projects = ({ toggleMode }) => {
                     Demo-Link
                   </button>
                 </div>
-              </div>
+              </motion.div>
 
               <div className="font-semibold py-8">
                 <h1 className="text-red">{title}</h1>
