@@ -1,5 +1,7 @@
 import umba from "../../assets/umba-shot.jpg"
 import landingpage from "../../assets/landing-page.jpg"
+import game from "../../assets/Rock-Paper-Scissors.jpg"
+import polindrome from "../../assets/Polindrome.jpg"
 export const projectData = [
   {
     id: 1,
@@ -15,8 +17,14 @@ export const projectData = [
   },
   {
     id: 3,
-    title: "kndlvsdv",
+    title: "Rock-Paper-Scissor",
     description: `jdsnsdns`,
-    img: landingpage,
+    img: game,
+  },
+  {
+    id: 4,
+    title: "Polindrome Checker",
+    description: `jdsnsdns`,
+    img: polindrome,
   },
 ]
