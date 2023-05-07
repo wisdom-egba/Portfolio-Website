@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 const Hero = ({ toggleMode }) => {
   const [text] = useTypewriter({
     words: [
-      `Hello there!, I'm Wisdom`,
+      `Hey there!, I'm Wisdom`,
       `A Tech Enthusiast`,
       `I'm a Frontend <Developer />`,
     ],

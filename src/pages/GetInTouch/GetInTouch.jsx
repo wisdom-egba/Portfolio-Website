@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 const GetInTouch = ({ toggleMode }) => {
   return (
     <div
-      className="relative z-10 w-full shadow-g"
+      className="relative z-10 w-full shadow-lg outline-none"
       aria-labelledby="modal-title"
       role="dialog"
       aria-modal="true"

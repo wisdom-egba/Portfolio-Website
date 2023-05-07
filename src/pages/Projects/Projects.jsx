@@ -21,21 +21,21 @@ const Projects = ({ toggleMode }) => {
               className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center z-10 "
             >
               <motion.div
-                initial={{ scale: 0, opacity: 0.5 }}
+                initial={{ scale: 0.4, opacity: 0.2 }}
                 animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 2 }}
+                transition={{ duration: 1.5 }}
                 className="snap-center flex items-center justify-center filter "
               >
                 <img
-                  className=" md:w-[40%] lg:w-[30%] rounded-xl drop-shadow-lg shadow-xl "
+                  className=" md:w-[40%] lg:w-[30%] rounded-xl "
                   src={img}
                   alt=""
                 />
                 <div className="absolute text-black flex gap-3 w-full justify-center mt-40 z-30 hover:grayscale">
-                  <button className="p-2 rounded-full border">
+                  <button className="p-2 rounded-full border outline-none">
                     Source Code
                   </button>
-                  <button className="p-2 rounded-full border ">
+                  <button className="p-2 rounded-full border outline-none ">
                     Demo-Link
                   </button>
                 </div>
