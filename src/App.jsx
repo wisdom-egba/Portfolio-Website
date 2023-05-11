@@ -1,7 +1,14 @@
 import React, { useState } from "react"
 import Header from "./Components/Header"
 import Hero from "./Components/Hero"
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom"
 import About from "./pages/About/About"
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"

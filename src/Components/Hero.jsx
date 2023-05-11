@@ -1,4 +1,4 @@
-import { motion, delay } from "framer-motion"
+import { motion } from "framer-motion"
 import React from "react"
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 import CircleBackground from "./CircleBackground"
