@@ -12,7 +12,7 @@ export const projectData = [
   {
     id: 2,
     title: "Landing Page",
-    description: `jdsnsdns`,
+    description: ``,
     img: landingpage,
   },
   {
