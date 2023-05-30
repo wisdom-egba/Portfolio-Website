@@ -1,6 +1,13 @@
 ﻿# Portfolio-Website
 <p>This is a portfolio website for Wisdom Egba. It showcases my technical skills, web design skills, and creativity.</p>
 <h1>Getting Started</h1>
+To get started, clone this repository to your local machine:
+git clone https://github.com/wisdom-egba/Portfolio-Website.git
+
+Then, install the dependencies: $ npm install
+
+
+Finally, start the development server: $ npm run dev
 
 
 The website will be available at `http://localhost:3000`.
